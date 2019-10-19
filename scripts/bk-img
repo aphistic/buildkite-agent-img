@@ -1,0 +1,9 @@
+#!/bin/sh
+
+set -x
+
+export USER=user
+export HOME=/home/user
+export XDG_RUNTIME_DIR=/run/user/1000
+
+gosu user img $@
